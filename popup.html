@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="head">
+    <h2>🔖 LinkVault</h2>
+    <input id="search" placeholder="Search links..." />
+  </div>
+
+  <div class="btn-row">
+    <button id="saveOne">Save This Tab</button>
+    <button id="saveAll">Save All Tabs</button>
+  </div>
+
+  <div class="filters">
+    <select id="filterCat">
+      <option value="all">All Topics</option>
+      <option value="dev">Dev</option>
+      <option value="learn">Learn</option>
+      <option value="social">Social</option>
+      <option value="shop">Shop</option>
+      <option value="video">Video</option>
+      <option value="other">Other</option>
+    </select>
+    <button id="clearAll" class="ghost">Clear All</button>
+  </div>
+
+  <div id="count"></div>
+  <div id="list"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
